@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: for the box;
+    font-family:"century gothic",sanis-sarif ;
+    transition:0.6s;
+
+}
+
+.navlist ul{
+    display: flex;
+    list-style: none;
+}
+.navlist ul li:first-child{
+    flex: 1;
+}
+.navlist ul h4{
+    font-family: serif;
+    color: #fff;
+}
+.navlist ul a{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.navlist ul a:hover{
+    color: #f80;
+}*/
+/* CONTAINER*/
+.container{
+    width: 100%;
+    height: 80vh;
+    padding-top: 25vh;
+    background-image: linear-gradient(#000000c3);
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.container h1{
+    font-family: sarif;
+    margin-bottom: 20px;
+    word-spacing: 5px
+}
+.container p{
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+.container button
+{
+    padding: 10px;
+    background: none;
+    border: 1px solid #f80;
+}
+.container button:hover{
+    background: #f80;
+}
+/* CONTENT.BOX*/
+.content-box{
+    width: 80%;
+    margin: auto;
+
+}
+.content-box>h2{
+    text-align: center;
+    color: #f80;
+    margin: 25px;
+}
+.content-box>h2 ::before, .content-box>h2 ::after{
+    content: ".......";
+    letter-spacing: -5px;
+    margin: 0 10px;
+}
+
+.content-box.row{
+    display: flex;
+    justify-content: space-between;
+}.content-box.column{
+    width: 32%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.content-box.image{
+    width: 100%;
+    height: auto;
+}
+.content-box.column a :last-child{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #f80;
+    text-align: center;
+    line-height: 35vh;
+    font-size: 3vh;
+}
+.content-box.column:hover a:last-child{
+    height: 100%;
+    top: 0;
+}
+/* FOTTER*/
+footer{
+    margin-top: 40px;
+    background: #ccc;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+footer ul li{
+    margin: 10px;
+}
+@media(max-width:600){
+    .content-box.row{
+        flex-direction: column;
+    }
+    .content-box.column{
+        width: 100%;
+        margin: auto;
+    }
+    .content-box.column a :last-child{
+        line-height:80vw ;
+        font-size: 6dvw;
+    }
+}
+li{
+    display: inline-block;
+    padding: 25px;
+    padding-right: 20px;
+}
+ul{
+    background-color: chartreuse;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.header{
+    background-color: crimson;
+    color: azure;
+    text-align: center;
+
+}
+.new{
+    text-align: center;
+    color: blue;
+    size: 100px;
+    background-color:#f80;
+}
